@@ -9,7 +9,7 @@ VALUES ('Hammy', '2020-10-15', 'vet', 'antibiotics');
 
 UPDATE petEvent
 SET remark = '5 kittens, 2 male, 3 female'
-WHERE petname = 'Fluffy', eventdate = '1995-05-15'
+WHERE petname = 'Fluffy' AND eventdate = '1995-05-15'
 
 INSERT INTO petEvent (petname, eventdate, eventtype, remark) 
 VALUES ('Claws', '1997-08-03', 'vet', 'broken rib');
