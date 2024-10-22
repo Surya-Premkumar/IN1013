@@ -2,12 +2,13 @@ DROP TABLE IF EXISTS petEvent;
 DROP TABLE IF EXISTS petPet;
 
 CREATE TABLE petPet (
-  petname VARCHAR(20) PRIMARY KEY,
+  petname VARCHAR(20),
   owner VARCHAR(45),
-  species ENUM('M', 'F'),
-  gender VARCHAR(15),
+  species VARCHAR(15),
+  gender ENUM('M', 'F'),
   birth DATE,
-  death DATE
+  death DATE,
+  PRIMARY KEY (petname)
 );
 
 CREATE TABLE petEvent (
