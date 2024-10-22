@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS petPet;
 
 CREATE TABLE petPet (
   petname VARCHAR(20),
-  owner VARCHAR(45),
+  `owner` VARCHAR(45),
   species VARCHAR(15),
   gender ENUM('M', 'F'),
   birth DATE,
