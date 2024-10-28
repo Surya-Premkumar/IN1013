@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS petEvent;
-DROP TABLE IF EXISTS petPet;
+-- DROP TABLE IF EXISTS petEvent;
+-- DROP TABLE IF EXISTS petPet;
 
 CREATE TABLE petPet (
   petname VARCHAR(20),
@@ -17,5 +17,5 @@ CREATE TABLE petEvent (
   eventtype VARCHAR(20),
   remark VARCHAR(255),
   PRIMARY KEY (petname, eventdate),
-  FOREIGN KEY (petname) REFERENCES petPet(petname)
+  FOREIGN KEY (petname) REFERENCES petPet(petname) ON DELETE CASCADE
 );
