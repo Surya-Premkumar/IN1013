@@ -17,7 +17,7 @@ WHERE cust_name LIKE '% C%';
 --4
 SELECT first_name, surname
 FROM reststaff
-WHERE headwaiter IS NOT NULL;
+WHERE headwaiter IS NULL;
 
 --5
 SELECT *
