@@ -1,4 +1,3 @@
-use restaurant;
 -- 1
 CREATE OR REPLACE VIEW samsBills
 AS SELECT first_name, surname, bill_date, cust_name, bill_total 
